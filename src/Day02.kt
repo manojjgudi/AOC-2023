@@ -6,7 +6,7 @@ fun main() {
         var result = 0
         for(str in input) {
             val (gameString, gamesString) = str.split(":")
-            val currentMap = cubesMap.keys.map { it to 0 }.toMap().toMutableMap()
+            val currentMap = cubesMap.keys.associateWith { 0 }.toMutableMap()
             val gameId = gameString.trim().removePrefix("Game ").trim().toInt()
             gamesString.split(";")
                 .map { it.trim() }
