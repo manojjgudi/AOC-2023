@@ -1,5 +1,3 @@
-import javax.swing.tree.TreePath
-
 fun main() {
 
     fun part1(input: List<String>): Int {
